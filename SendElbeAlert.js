@@ -1,4 +1,3 @@
-
 import fetch from "node-fetch";
 
 
@@ -20,9 +19,7 @@ function SendEmail(data){
     var body = data>100?"ALERT!Water level above threshold":"Water Level below threshold";
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "theres.thoms@gmail.com",
-        Password : "84217CE2C40D8EFE94085C91414EACCEB295",
+       SecureToken:"301f9eb3-ef4f-485b-9c8c-e431db83537a",
         To : 'theresathomas16@gmail.com',
         From : "theres.thoms@gmail.com",
         Subject : "Alert Email",
