@@ -3,3 +3,4 @@ SetIntreval is used to call the pegel online api every 5 minutes in order to get
 In the getElbeData function,fetch api is called to get the JSON response and from the response currentMeasurement.value is obtained.
 SMTP server set up using elasticemail.com and sent email using Email.send function.
 Body is defined according to the threshold value.
+In order to run the code,first packages have to installed by using the command npm install and then the command node SendElbeAlert.js
